@@ -1,0 +1,96 @@
+@import "./variables";
+
+@media (any-hover: hover) {
+  .button:hover {
+    background-color: #825c10;
+  }
+}
+
+* {
+  outline:     none;
+  box-sizing:  border-box;
+  margin:      0;
+  padding:     0;
+  font-family: 'Asket', sans-serif;
+  transition:  all linear 0.3s;
+  color:      $white;
+}
+
+html,
+body {
+  background: $base-color;
+  height: 100%;
+  width:  100%;
+}
+
+section {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  cursor:          pointer;
+  font-size: 24px;
+  line-height: 3.3;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+h1 {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+
+body {
+  display:        flex;
+  flex-direction: column;
+  min-height:     100%;
+}
+
+main {
+  flex:     1 0 auto;
+  position: relative;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  background: $second-color;
+  border-radius: 50px;
+  width: 246px;
+  text-align: center;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.container {
+  width:     100%;
+  max-width: 1450px;
+  padding:   0 15px;
+  margin:    0 auto;
+  position:  relative;
+}
+
+
+@media screen and (max-width: 991.98px) {
+
+}
+
+@media screen and (max-width: 567px) {
+
+}

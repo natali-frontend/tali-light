@@ -1,0 +1,12 @@
+# assets
+.sass-cache
+
+# mac os
+.DS_Store
+
+# npm
+node_modules
+
+# IDE
+.idea
+v

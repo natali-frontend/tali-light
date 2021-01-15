@@ -1,0 +1,23 @@
+{
+  "name": "name-project",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "gulpfile.js",
+  "engines": {
+    "node": "14.2.0",
+    "npm": "6.14.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no tlsest specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.0.2"
+  }
+}

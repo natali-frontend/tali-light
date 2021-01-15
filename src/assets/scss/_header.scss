@@ -1,0 +1,49 @@
+@import "./variables";
+
+
+@media (any-hover: hover) {
+  .header {
+
+  }
+}
+
+.header {
+  padding: 60px 0 0;
+  &-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header-logo {
+
+  }
+  .menu {
+    display: flex;
+    list-style-type: none;
+    &-item {
+      margin-right: 20px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        padding-right: 20px;
+      }
+      &.active {
+        border-bottom: 4px solid #7B07FF;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 991.98px) {
+  .header {
+
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .header {
+
+  }
+}
