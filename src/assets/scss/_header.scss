@@ -15,7 +15,18 @@
   &-inner {
     display:         flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:     center;
+    position:        relative;
+    padding-left:    30px;
+    &:after {
+      content:    "";
+      position:   absolute;
+      right:      0;
+      top:        0;
+      width:      17px;
+      height:     150px;
+      background: $second-color;
+    }
   }
   .header-logo {
 
