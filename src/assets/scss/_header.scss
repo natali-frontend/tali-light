@@ -28,12 +28,10 @@
       background: $second-color;
     }
   }
-  .header-logo {
-
-  }
   .menu {
     display:         flex;
     list-style-type: none;
+    margin-right:    4.8%;
     &-item {
       margin-right: 20px;
       &:last-child {
