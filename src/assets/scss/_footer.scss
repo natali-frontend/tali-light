@@ -7,8 +7,17 @@
 }
 
 .footer {
-  background: $black;
-  color:      $white;
+  border-top: 5px solid $second-color;
+  padding:    40px 0;
+  &-inner {
+    text-align: center;
+    max-width:  790px;
+    margin:     0 auto;
+  }
+  p {
+    font-size: 20px;
+    color:     $text-color;
+  }
 }
 
 @media screen and (max-width: 991.98px) {
