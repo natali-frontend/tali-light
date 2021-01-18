@@ -66,6 +66,33 @@ main {
   flex: 0 0 auto;
 }
 
+form {
+  display:        flex;
+  flex-direction: column;
+  label {
+    margin-bottom: 20px;
+    &:nth-child(2) {
+      margin-bottom: 70px;
+    }
+  }
+  input {
+    width:      100%;
+    background: transparent;
+    border:     2px solid $white;
+    padding:    15px 30px;
+    font-size:  22px;
+    &::placeholder {
+      color:       $text-color;
+      font-weight: 300;
+    }
+  }
+  button {
+    border: none;
+    width:  255px;
+    cursor: pointer;
+  }
+}
+
 .btn {
   display: inline-block;
   background: $second-color;
