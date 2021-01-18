@@ -2,8 +2,8 @@
 
 
 @media (any-hover: hover) {
-  .header {
-
+  .header .menu .menu-item:hover {
+    border-bottom: 4px solid $second-color;
   }
 }
 
