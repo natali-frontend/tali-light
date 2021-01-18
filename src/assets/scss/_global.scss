@@ -1,8 +1,9 @@
 @import "./variables";
 
 @media (any-hover: hover) {
-  .button:hover {
-    background-color: #825c10;
+  .btn:hover {
+    background: transparent;
+    border:     3px solid $second-color;
   }
 }
 
