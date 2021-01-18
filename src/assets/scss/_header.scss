@@ -33,7 +33,8 @@
     list-style-type: none;
     margin-right:    4.8%;
     &-item {
-      margin-right: 20px;
+      margin-right:  20px;
+      border-bottom: 4px solid transparent;
       &:last-child {
         margin-right: 0;
       }
