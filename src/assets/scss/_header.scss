@@ -9,6 +9,9 @@
 
 .header {
   padding: 60px 0 0;
+  &-logo {
+    cursor: pointer;
+  }
   &-inner {
     display:         flex;
     justify-content: space-between;
