@@ -13,14 +13,13 @@
   padding:     0;
   font-family: 'Asket', sans-serif;
   transition:  all linear 0.3s;
-  color:      $white;
+  color:       $white;
 }
 
 html,
 body {
   background: $base-color;
-  height: 100%;
-  width:  100%;
+  width:      100%;
 }
 
 section {
@@ -39,16 +38,16 @@ ul {
 }
 
 img {
-  width: 100%;
+  width:   100%;
   display: flex;
 }
 
 h1 {
-  font-size: 100px;
-  font-weight: 400;
-  line-height: 1.4;
+  font-size:      100px;
+  font-weight:    400;
+  line-height:    1.4;
   text-transform: uppercase;
-  margin-bottom: 70px;
+  margin-bottom:  70px;
 }
 
 body {
@@ -94,8 +93,8 @@ form {
 }
 
 .btn {
-  display: inline-block;
-  background: $second-color;
+  display:       inline-block;
+  background:    $second-color;
   border-radius: 50px;
   width: 246px;
   text-align: center;

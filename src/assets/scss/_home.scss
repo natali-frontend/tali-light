@@ -8,36 +8,36 @@
 }
 
 .banner {
-  overflow: hidden;
+  margin-bottom: 5.73%;
+  overflow:      hidden;
   &-inner {
-    display: flex;
+    display:         flex;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 90px;
+    align-items:     center;
+    padding-left:    90px;
     .banner-image {
-      width: 32.4%;
+      width:    32.4%;
       position: relative;
-      z-index: 1;
+      z-index:  1;
       &:after {
-        content: "";
-        position: absolute;
-        bottom: -20%;
-        left: -32%;
-        width: 154.4%;
-        height: 108.4%;
+        content:       "";
+        position:      absolute;
+        bottom:        -20%;
+        left:          -32%;
+        width:         154.4%;
+        height:        108.4%;
         border-radius: 50%;
-        background: $second-color;
-        z-index: -1;
+        background:    $second-color;
+        z-index:       -1;
       }
       img {
-        z-index: 5;
+        z-index:  5;
+        position: relative;
       }
     }
     .banner-description {
-      width: 37%;
-      .btn {
-        margin-right: 50px;
-      }
+      width:        37%;
+      margin-right: 8%;
     }
   }
 }
