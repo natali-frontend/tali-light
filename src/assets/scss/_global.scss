@@ -79,9 +79,19 @@ h2 {
   text-transform: uppercase;
 }
 
-main {
-  flex:     1 0 auto;
-  position: relative;
+h3 {
+  font-size:      34px;
+  font-weight:    200;
+  line-height:    1.44;
+  text-transform: uppercase;
+  color:          $second-color;
+  margin-bottom:  35px;
+}
+
+p {
+  font-size:   24px;
+  font-weight: 300;
+  color:       $text-color;
 }
 
 .footer {
