@@ -16,10 +16,31 @@
   color:       $white;
 }
 
-html,
 body {
   background: $base-color;
   width:      100%;
+}
+
+body {
+  display:        flex;
+  flex-direction: column;
+  min-height:     100%;
+  position:       relative;
+  &:after {
+    content:       "";
+    position:      absolute;
+    left:          -280px;
+    bottom:        -12px;
+    width:         434px;
+    height:        434px;
+    background:    $second-color;
+    border-radius: 50%;
+  }
+}
+
+main {
+  flex:     1 0 auto;
+  position: relative;
 }
 
 section {
