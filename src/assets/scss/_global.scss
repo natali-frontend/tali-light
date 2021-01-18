@@ -119,8 +119,18 @@ form {
   display:       inline-block;
   background:    $second-color;
   border-radius: 50px;
-  width: 246px;
-  text-align: center;
+  width:         246px;
+  text-align:    center;
+  line-height:   3.3;
+  margin-right:  50px;
+  font-size:     24px;
+  border:        3px solid transparent;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.button {
+    width: 255px;
+  }
 }
 
 .d-none {
