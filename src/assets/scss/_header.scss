@@ -8,7 +8,34 @@
 }
 
 .header {
-  padding: 60px 0 0;
+  position:   fixed;
+  width:      100%;
+  background: $base-color;
+  z-index:    20;
+  padding:    60px 0 10px;
+  &.header-mobile {
+    display: none;
+    &:after {
+      content:       "";
+      position:      absolute;
+      top:           0;
+      right:         0;
+      width:         124px;
+      height:        124px;
+      background:    linear-gradient(-45deg, rgb(123, 7, 255), rgb(152, 24, 199));
+      border-radius: 50%;
+      transform:     translate(40%, -50%);
+      z-index:       20;
+    }
+    .header-inner {
+      &:after {
+        top: 60px;
+      }
+    }
+    .header-logo {
+      display: none;
+    }
+  }
   &-logo {
     cursor: pointer;
   }
