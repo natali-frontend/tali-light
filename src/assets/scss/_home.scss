@@ -29,8 +29,30 @@
         width:         154.4%;
         height:        108.4%;
         border-radius: 50%;
-        background:    $second-color;
+        background:    linear-gradient(-45deg, rgb(123, 7, 255), rgb(152, 24, 199));
         z-index:       -1;
+      }
+      &:before {
+        content:             "Tali Light";
+        position:            absolute;
+        left:                0;
+        bottom:              0;
+        font-family:         "Bebas", sans-serif;
+        font-size:           200px;
+        -webkit-text-stroke: 1px $white;
+        color:               transparent;
+        z-index:             11;
+        transform:           translate(-5%, 11%);
+      }
+      h1 {
+        position:    absolute;
+        bottom:      0;
+        left:        -3%;
+        z-index:     10;
+        width:       100%;
+        font-family: "Bebas", sans-serif;
+        font-size:   200px;
+        line-height: 1.2;
       }
       img {
         z-index:  5;
