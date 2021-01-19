@@ -17,9 +17,10 @@
     align-items:     center;
     padding:         35px 0 0 90px;
     .banner-image {
-      width:    32.4%;
-      position: relative;
-      z-index:  1;
+      width:        35%;
+      position:     relative;
+      z-index:      1;
+      margin-right: 22%;
       &:after {
         content:       "";
         position:      absolute;
