@@ -58,27 +58,23 @@
       }
     }
     .info-image {
+      position:   relative;
       width:      50.3%;
       height:     850px;
-      position:   relative;
       margin-top: 30px;
-      &:after, &:before {
-        content:  "";
+      .image-1, .image-2 {
         position: absolute;
       }
-      &:after {
-        background-image: url("../images/info-image-1.svg");
-        width:            454px;
-        height:           680px;
-        top:              0;
-        left:             0;
+      .image-1 {
+        width: 454px;
+        top:   0;
+        left:  0;
       }
-      &:before {
-        background-image: url("../images/info-image-2.svg");
-        width:            482px;
-        height:           723px;
-        bottom:           0;
-        right:            0;
+      .image-2 {
+        right:   0;
+        bottom:  0;
+        width:   482px;
+        z-index: -1;
       }
     }
   }
