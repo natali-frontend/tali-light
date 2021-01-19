@@ -151,7 +151,7 @@
     justify-content: space-between;
     align-items:     center;
     .maecenas-description {
-      width: 42.82%;
+      max-width: 38%;
       .description-content {
         border-left:   16px solid $second-color;
         padding:       0 0 40px 50px;
