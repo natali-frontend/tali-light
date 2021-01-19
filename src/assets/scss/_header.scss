@@ -74,6 +74,33 @@
         border-bottom: 3px solid #7B07FF;
       }
     }
+    &.mobile-menu {
+      display:         none;
+      flex-direction:  column;
+      justify-content: center;
+      align-items:     center;
+      width:           100%;
+      height:          100vh;
+      position:        relative;
+      &:after {
+        content:    "";
+        position:   absolute;
+        bottom:     35px;
+        left:       0;
+        width:      6px;
+        height:     155px;
+        background: $second-color;
+      }
+      .menu-item {
+        margin: 0 0 20px 0;
+        &.active {
+          border-bottom: 3px solid #7B07FF;
+        }
+        a {
+          color: $white;
+        }
+      }
+    }
   }
   .burger {
     position:        absolute;
