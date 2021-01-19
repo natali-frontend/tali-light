@@ -109,12 +109,21 @@
   &-inner {
     display:     flex;
     align-items: center;
-
     .purpose-description {
-      display:    flex;
-      padding:    70px;
-      background: linear-gradient(90deg, rgba(152, 24, 199, 0.31) 10%, rgba(123, 7, 255, 0.31) 50%);
-      width:      50vw;
+      display:  flex;
+      padding:  4.1%;
+      width:    50vw;
+      position: relative;
+      &:before {
+        content:    "";
+        position:   absolute;
+        top:        0;
+        left:       0;
+        width:      100vw;
+        height:     100%;
+        background: linear-gradient(to left, rgba(123, 7, 255, 0.2), rgba(152, 24, 199, 0.2));
+        z-index:    1;
+      }
       p {
         color:          $second-color;
         font-weight:    300;
