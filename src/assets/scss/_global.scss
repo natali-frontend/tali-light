@@ -23,17 +23,7 @@ body {
   display:        flex;
   flex-direction: column;
   min-height:     100%;
-  position:       relative;
-  &:after {
-    content:       "";
-    position:      absolute;
-    left:          -280px;
-    bottom:        -12px;
-    width:         434px;
-    height:        434px;
-    background:    $second-color;
-    border-radius: 50%;
-  }
+
 }
 
 .wrapper {
@@ -90,13 +80,13 @@ h2 {
   margin-bottom:  70px;
 }
 
-h2 {
+h3 {
   font-size:      38px;
   font-weight:    300;
   text-transform: uppercase;
 }
 
-h3 {
+h4 {
   font-size:      34px;
   font-weight:    200;
   line-height:    1.44;
@@ -143,7 +133,6 @@ form {
   }
   button {
     border: none;
-    width:  255px;
     cursor: pointer;
   }
 }
@@ -160,9 +149,6 @@ form {
   border:        3px solid transparent;
   &:last-child {
     margin-right: 0;
-  }
-  &.button {
-    width: 255px;
   }
 }
 
