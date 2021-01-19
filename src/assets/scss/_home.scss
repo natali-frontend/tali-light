@@ -215,3 +215,24 @@
     }
   }
 }
+
+@media screen and (max-width: 991.98px) {
+
+}
+
+@media screen and (max-width: 567px) {
+  .banner {
+    &-inner {
+      flex-direction: column;
+      padding:        0;
+    }
+  }
+  .info, .purpose, .maecenas, .contacts {
+    &-inner {
+      flex-direction: column;
+    }
+  }
+  .info-description, .info-image, .purpose-image, .purpose-description, .maecenas-image, .maecenas-description, {
+    width: 100%;
+  }
+}
