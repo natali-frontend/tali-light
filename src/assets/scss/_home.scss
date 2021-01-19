@@ -31,6 +31,7 @@
         border-radius: 50%;
         background:    linear-gradient(-45deg, rgb(123, 7, 255), rgb(152, 24, 199));
         z-index:       -1;
+        transform:     translate(-23%, 18%);
       }
       &:before {
         content:             "Tali Light";
