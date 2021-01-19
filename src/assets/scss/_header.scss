@@ -103,8 +103,43 @@
   }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 991.98px) {
   .header {
 
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .header {
+    padding: 15px 0;
+    &.header-mobile {
+      display: block;
+    }
+    .burger {
+      display: flex;
+    }
+    &-inner {
+      padding:     0 15px 0 0;
+      align-items: center;
+      &:after {
+        width:  6px;
+        height: 50px;
+      }
+    }
+    &-logo {
+      width:  50px;
+      height: 30px;
+    }
+    .menu {
+      display: none;
+      &-item {
+        a {
+          font-size: 16px;
+        }
+      }
+      &.mobile-menu {
+        display: flex;
+      }
+    }
   }
 }
