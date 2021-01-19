@@ -18,11 +18,6 @@
 }
 
 body {
-  background: $base-color;
-  width:      100%;
-}
-
-body {
   display:        flex;
   flex-direction: column;
   min-height:     100%;
@@ -36,6 +31,24 @@ body {
     height:        434px;
     background:    $second-color;
     border-radius: 50%;
+  }
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  &:after {
+    content:       "";
+    position:      absolute;
+    left:          0;
+    bottom:        0;
+    width:         22.61vw;
+    height:        22.61vw;
+    background:    $second-color;
+    border-radius: 50%;
+    transform:     translate(-63%, 10px);
+    background:    linear-gradient(-45deg, rgb(123, 7, 255), rgb(152, 24, 199));
+
   }
 }
 
