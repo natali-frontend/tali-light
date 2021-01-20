@@ -22,12 +22,19 @@
 
 @media screen and (max-width: 991.98px) {
   .footer {
-
+    p {
+      font-size: 14px;
+    }
   }
 }
 
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 680px) {
   .footer {
-
+    border-top: 2px solid $second-color;
+    padding:    10px 0;
+    p {
+      font-size:   12px;
+      line-height: 1.3;
+    }
   }
 }

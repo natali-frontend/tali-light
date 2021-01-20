@@ -1,6 +1,5 @@
 @import "./variables";
 
-
 @media (any-hover: hover) {
   .header {
 
@@ -17,10 +16,9 @@
     align-items:     center;
     padding:         35px 0 0 90px;
     .banner-image {
-      width:        35%;
-      position:     relative;
-      z-index:      1;
-      margin-right: 22%;
+      width:    34%;
+      position: relative;
+      z-index:  1;
       &:after {
         content:       "";
         position:      absolute;
@@ -39,21 +37,11 @@
         left:                0;
         bottom:              0;
         font-family:         "Bebas", sans-serif;
-        font-size:           200px;
+        font-size:           10.4vw;
         -webkit-text-stroke: 1px $white;
         color:               transparent;
         z-index:             11;
         transform:           translate(-5%, 11%);
-      }
-      h1 {
-        position:    absolute;
-        bottom:      0;
-        left:        -3%;
-        z-index:     10;
-        width:       100%;
-        font-family: "Bebas", sans-serif;
-        font-size:   200px;
-        line-height: 1.2;
       }
       img {
         z-index:  5;
@@ -61,8 +49,15 @@
       }
     }
     .banner-description {
-      width:        37%;
-      margin-right: 8%;
+      width:          38.8%;
+      margin-right:   8%;
+      text-align:     center;
+      display:        flex;
+      flex-direction: column;
+      align-items:    center;
+      .buttons {
+        width: 100%;
+      }
     }
   }
 }
@@ -73,30 +68,29 @@
     display:         flex;
     justify-content: space-between;
     align-items:     center;
-    padding:         0 45px 0 0;
     .info-description {
       width: 36.3%;
       p {
-        margin-bottom: 21.5%;
+        margin-bottom: 9.93%;
       }
     }
     .info-image {
       position:   relative;
-      width:      50.3%;
-      height:     850px;
+      width:      48%;
+      min-height: 850px;
       margin-top: 30px;
       .image-1, .image-2 {
         position: absolute;
       }
       .image-1 {
-        width: 454px;
+        width: 55.7%;
         top:   0;
         left:  0;
       }
       .image-2 {
         right:   0;
         bottom:  0;
-        width:   482px;
+        width:   59.2%;
         z-index: -1;
       }
     }
@@ -110,10 +104,11 @@
     display:     flex;
     align-items: center;
     .purpose-description {
-      display:  flex;
-      padding:  4.1%;
-      width:    50vw;
-      position: relative;
+      display:         flex;
+      justify-content: space-between;
+      padding:         4.1%;
+      width:           59.2vw;
+      position:        relative;
       &:before {
         content:    "";
         position:   absolute;
@@ -132,7 +127,7 @@
       .description-item {
         border-left:  6px solid $second-color;
         padding-left: 10px;
-        margin-right: 24%;
+        margin-right: 20px;
         &:last-child {
           margin-right: 0;
         }
@@ -148,26 +143,27 @@
     justify-content: space-between;
     align-items:     center;
     .maecenas-description {
-      max-width: 38%;
+      width: 38%;
       .description-content {
         border-left:   16px solid $second-color;
-        padding:       0 0 40px 50px;
-        margin-bottom: 9.3%;
+        padding:       0 0 5px 8%;
+        margin-bottom: 9.5%;
         p {
-          font-size:   25px;
-          font-weight: 300;
-          color:       #BDBDBD;
+          font-size: 25px;
         }
-        h3 {
-          position: relative;
+        span {
+          position:    relative;
+          margin-left: 11%;
           &:after {
             content:          "";
             position:         absolute;
-            right:            70px;
-            bottom:           0;
+            right:            0;
+            bottom:           10px;
             width:            43px;
             height:           43px;
             background-image: url("../images/gift.svg");
+            background-size:  contain;
+            z-index:          1;
           }
         }
       }
@@ -176,8 +172,8 @@
       }
     }
     .maecenas-image {
-      position:  relative;
-      max-width: 34.7%;
+      position: relative;
+      width:    34.7%;
       span {
         position:  absolute;
         top:       67%;
@@ -191,36 +187,33 @@
 }
 
 .tali-image {
-  margin-bottom: 6.7%;
+  margin-bottom: 8.3%;
 }
 
 .contacts {
-  margin-bottom: 5.7%;
-  display:       flex;
-  padding:       0 15px 0 0;
-  .contacts-image {
-    margin-right: 20px;
+  margin-bottom: 8.3%;
+  &-inner {
+    display: flex;
   }
   .contacts-contact, .tell {
     display:        flex;
     flex-direction: column;
   }
-  .contacts-form, .contacts-contact {
-    padding-top: 75px;
+  &-form {
+    max-width:    670px;
+    width:        100%;
+    margin-right: 10.81%;
   }
-  .contacts-form {
-    width:        35.2%;
-    margin-right: 9.4%;
-  }
-  .contacts-contact {
+  &-contact {
     .tell {
       border-left:   6px solid $second-color;
-      padding:       5px 0 5px 25px;
+      padding-left:  25px;
       margin-bottom: 25px;
-      font-weight:   300;
       a {
         margin-bottom: 10px;
         font-size:     25px;
+        font-weight:   700;
+        line-height:   1.7;
         &:last-child {
           margin-bottom: 0;
         }
@@ -231,6 +224,9 @@
       padding-left: 30px;
       a {
         margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
+        }
       }
       img {
         width:  45px;
