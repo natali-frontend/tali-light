@@ -10,9 +10,14 @@
 .header {
   position:   fixed;
   width:      100%;
-  background: $bg-color;
+  background: transparent;
   z-index:    20;
-  padding:    60px 0 10px;
+  padding:    10px 0;
+  border-bottom: 1px solid transparent;
+  &.fixed {
+    background: $bg-color;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
   &.header-mobile {
     display: none;
     &:after {
@@ -46,15 +51,6 @@
     align-items:     center;
     position:        relative;
     padding-left:    30px;
-    &:after {
-      content:    "";
-      position:   absolute;
-      right:      0;
-      top:        0;
-      width:      17px;
-      height:     150px;
-      background: $second-color;
-    }
   }
   .menu {
     display:         flex;
@@ -63,6 +59,9 @@
     &-item {
       margin:        0 25px;
       border-bottom: 3px solid transparent;
+      &:active {
+        border-bottom: 3px solid $second-color;
+      }
       &:last-child {
         margin-right: 0;
       }
@@ -70,9 +69,6 @@
         color:       $text-color;
         font-family: "Asket Extended", sans-serif;
         font-weight: 300;
-      }
-      &.active {
-        border-bottom: 3px solid #7B07FF;
       }
     }
     &.mobile-menu {
@@ -94,9 +90,6 @@
       }
       .menu-item {
         margin: 0 0 20px 0;
-        &.active {
-          border-bottom: 3px solid #7B07FF;
-        }
         a {
           color: $white;
         }
@@ -105,13 +98,13 @@
   }
   .burger {
     position:        absolute;
-    top:             10px;
+    top:             4px;
     right:           15px;
     display:         none;
     justify-content: center;
     align-items:     center;
-    width:           15px;
-    height:          15px;
+    width:           20px;
+    height:          20px;
     cursor:          pointer;
     z-index:         100;
     span {
@@ -206,6 +199,7 @@
 @media screen and (max-width: 680px) {
   .header {
     padding: 15px 0 10px;
+    background: $bg-color;
     &.header-mobile {
       display: block;
     }
@@ -213,7 +207,7 @@
       display: flex;
     }
     &-inner {
-      padding:     0 15px 0 0;
+      padding:     0;
       align-items: center;
       &:after {
         width:  6px;
@@ -233,6 +227,7 @@
       }
       &.mobile-menu {
         display: flex;
+        margin: 0;
       }
     }
   }
