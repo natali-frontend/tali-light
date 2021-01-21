@@ -87,15 +87,15 @@
     .info-image {
       position:   relative;
       width:      48%;
-      min-height: 850px;
       margin-top: 20px;
-      .image-1, .image-2 {
+     .image-2 {
         position: absolute;
       }
       .image-1 {
         width: 55.7%;
         top:   0;
         left:  0;
+        padding-bottom: 20%;
       }
       .image-2 {
         left:    36%;
