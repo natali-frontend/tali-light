@@ -1,11 +1,108 @@
 @import "./variables";
 
 @media (any-hover: hover) {
-  .header {
-
-  }
 }
 
+.popup {
+  padding: 20px;
+  z-index:         100;
+  width:           100%;
+  height:          100%;
+  position:        fixed;
+  background:      rgba(0, 0, 0, 0.6);
+  display:         flex;
+  justify-content: center;
+  align-items:     center;
+  &-inner {
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+    background: $white;
+    padding: 2.7% 20px;
+    position: relative;
+    overflow: hidden;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 13vw;
+      height: 13vw;
+      background:    linear-gradient(-45deg, rgb(123, 7, 255), rgb(152, 24, 199));
+      border-radius: 50%;
+      transform: translate(50%, -50%);
+    }
+    .close {
+      position: absolute;
+      top: 5%;
+      right: 4%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.81vw;
+      height: 1.81vw;
+      cursor:          pointer;
+      z-index:         100;
+      span {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border-radius: 3px;
+        transition:    0.3s linear;
+        &:after, &:before {
+          content:    "";
+          width:      100%;
+          height:     3px;
+          position:   absolute;
+          top:        50%;
+          left:       50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+          background: $white;
+        }
+        &:after {
+          transform:  translate(-50%, -50%) rotate(-45deg);
+        }
+      }
+    }
+    h1 {
+      font-size: 3.34vw;
+      margin-bottom: 5.4%;
+      color: $bg-color;
+    }
+    p {
+      font-size: 28px;
+      margin-bottom: 5.4%;
+      color: $black;
+      &.card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 9%;
+        font-size: 23px;
+      }
+      img  {
+        width: 31px;
+        height: 31px;
+        margin-left: 5%;
+      }
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+    .copy-buttons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .btn {
+      line-height: 2.6;
+      max-width: 180px;
+      margin: 0 2% 15px;
+    }
+  }
+}
 .banner {
   padding-top:   170px;
   margin-bottom: 5.73%;
@@ -55,6 +152,17 @@
       img {
         z-index:  5;
         position: relative;
+      }
+      h1 {
+        font-family: "Bebas", sans-serif;
+        font-size:   9vw;
+        font-weight: bold;
+        line-height: 1.2;
+        position:    absolute;
+        bottom:      0;
+        left:        -3%;
+        z-index:     10;
+        width:       100%;
       }
     }
     .banner-description {
@@ -259,6 +367,20 @@
 }
 
 @media screen and (max-width: 1300px) {
+  .popup {
+    &-inner {
+      max-width: 520px;
+      .close {
+        right: 3%;
+      }
+      .card {
+        img {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
   .banner {
     &-inner {
       .banner-description {
@@ -302,7 +424,6 @@
 }
 
 @media screen and (max-width: 1200px) {
-
   .contacts {
     &-form {
       max-width: 540px;
@@ -326,6 +447,24 @@
 }
 
 @media screen and (max-width: 991.98px) {
+  .popup {
+    &-inner {
+      max-width: 420px;
+      h1 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 20px;
+        &.card {
+          font-size: 16px;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
   .banner {
     padding: 75px 0 0;
     &:after {
@@ -430,6 +569,36 @@
 }
 
 @media screen and (max-width: 680px) {
+  .popup {
+    &-inner {
+      max-width: 320px;
+      &:after {
+        width: 90px;
+        height: 90px;
+      }
+      p {
+        font-size: 16px;
+        &.card {
+          font-size: 14px;
+          padding-left: 15px;
+        }
+      }
+      .close {
+        width: 15px;
+        height: 15px;
+        span {
+          &:after, &:before {
+            height: 2px;
+          }
+        }
+      }
+      .btn {
+        max-width: 120px;
+        line-height: 2.3;
+        margin-bottom: 10px;
+      }
+    }
+  }
   .banner {
     padding-top:   55px;
     margin-bottom: 80px;
@@ -446,6 +615,10 @@
         &:before {
           font-size: 14vw;
           transform: translate(-2%, 11%);
+        }
+        h1 {
+          font-size: 14vw;
+          left:      0;
         }
       }
       .banner-description {

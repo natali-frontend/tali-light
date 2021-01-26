@@ -53,18 +53,6 @@ img {
   display: flex;
 }
 
-h1 {
-  font-family: "Bebas", sans-serif;
-  font-size:   9vw;
-  font-weight: bold;
-  line-height: 1.2;
-  position:    absolute;
-  bottom:      0;
-  left:        -3%;
-  z-index:     10;
-  width:       100%;
-}
-
 h2 {
   font-size:      5.21vw;
   font-weight:    800;
@@ -236,10 +224,6 @@ form {
     line-height:  2.7;
     font-size:    14px;
     margin-right: 15px;
-  }
-  h1 {
-    font-size: 14vw;
-    left:      0;
   }
   h2 {
     font-size:     30px;
