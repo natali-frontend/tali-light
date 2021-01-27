@@ -36,4 +36,16 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    //Popup
+    const btn = document.getElementsByClassName("btn-support");
+    const popup = document.getElementsByClassName("popup")[0];
+    const close = document.getElementsByClassName("close")[0];
+    for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener("click", function () {
+            popup.style.display = "flex";
+        });
+    }
+    close.addEventListener("click", function () {
+        popup.style.display = "none";
+    });
 });
