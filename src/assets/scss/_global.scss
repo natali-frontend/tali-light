@@ -139,6 +139,10 @@ form {
   &:last-child {
     margin: 0;
   }
+  &:active {
+    background: transparent;
+    border:     3px solid $second-color;
+  }
 }
 
 .d-none {

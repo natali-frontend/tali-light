@@ -1,11 +1,17 @@
 @import "./variables";
 
+.popup {
+  .btn:hover {
+    color: $second-color;
+  }
+}
+
 @media (any-hover: hover) {
 }
 
 .popup {
-  display: none;
-  padding: 20px;
+  display:         none;
+  padding:         20px;
   z-index:         100;
   width:           100%;
   height:          100%;
@@ -15,39 +21,39 @@
   align-items:     center;
   &-inner {
     border-radius: 20px;
-    text-align: center;
-    max-width: 600px;
-    width: 100%;
-    background: $white;
-    padding: 2.7% 20px;
-    position: relative;
-    overflow: hidden;
+    text-align:    center;
+    max-width:     600px;
+    width:         100%;
+    background:    $white;
+    padding:       2.7% 20px;
+    position:      relative;
+    overflow:      hidden;
     &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 13vw;
-      height: 13vw;
+      content:       "";
+      position:      absolute;
+      top:           0;
+      right:         0;
+      width:         13vw;
+      height:        13vw;
       background:    linear-gradient(-45deg, rgb(123, 7, 255), rgb(152, 24, 199));
       border-radius: 50%;
-      transform: translate(50%, -50%);
+      transform:     translate(50%, -50%);
     }
     .close {
-      position: absolute;
-      top: 5%;
-      right: 4%;
-      display: flex;
+      position:        absolute;
+      top:             5%;
+      right:           4%;
+      display:         flex;
       justify-content: center;
-      align-items: center;
-      width: 1.81vw;
-      height: 1.81vw;
+      align-items:     center;
+      width:           1.81vw;
+      height:          1.81vw;
       cursor:          pointer;
       z-index:         100;
       span {
-        position: relative;
-        width: 100%;
-        height: 100%;
+        position:      relative;
+        width:         100%;
+        height:        100%;
         border-radius: 3px;
         transition:    0.3s linear;
         &:after, &:before {
@@ -57,35 +63,38 @@
           position:   absolute;
           top:        50%;
           left:       50%;
-          transform: translate(-50%, -50%) rotate(45deg);
+          transform:  translate(-50%, -50%) rotate(45deg);
           background: $white;
         }
         &:after {
-          transform:  translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
         }
+      }
+      &:hover, &:active {
+        opacity: .7;
       }
     }
     h1 {
-      font-size: 3.34vw;
+      font-size:     3.34vw;
       margin-bottom: 3%;
-      color: $second-color;
+      color:         $second-color;
     }
     p {
-      font-size: 28px;
+      font-size:     28px;
       margin-bottom: 5.4%;
-      color: $second-color;
-      font-weight: 800;
+      color:         $second-color;
+      font-weight:   800;
       &.card {
-        display: flex;
+        display:         flex;
         justify-content: center;
-        align-items: center;
-        padding-left: 9%;
-        font-size: 23px;
-        color: $black;
+        align-items:     center;
+        padding-left:    9%;
+        font-size:       23px;
+        color:           $black;
       }
-      img  {
-        width: 31px;
-        height: 31px;
+      img {
+        width:       31px;
+        height:      31px;
         margin-left: 5%;
       }
       &:last-child {
@@ -93,18 +102,24 @@
       }
     }
     .copy-buttons {
-      display: flex;
+      display:         flex;
       justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
+      align-items:     center;
+      flex-wrap:       wrap;
     }
     .btn {
       line-height: 2.6;
-      max-width: 180px;
-      margin: 0 2% 15px;
+      max-width:   180px;
+      margin:      0 2% 15px;
+    }
+  }
+  .btn {
+    &:active {
+      color: $second-color;
     }
   }
 }
+
 .banner {
   padding-top:   170px;
   margin-bottom: 5.73%;
@@ -198,13 +213,13 @@
       position:   relative;
       width:      48%;
       margin-top: 20px;
-     .image-2 {
+      .image-2 {
         position: absolute;
       }
       .image-1 {
-        width: 55.7%;
-        top:   0;
-        left:  0;
+        width:          55.7%;
+        top:            0;
+        left:           0;
         padding-bottom: 20%;
       }
       .image-2 {
@@ -377,7 +392,7 @@
       }
       .card {
         img {
-          width: 25px;
+          width:  25px;
           height: 25px;
         }
       }
@@ -460,7 +475,7 @@
         &.card {
           font-size: 16px;
           img {
-            width: 20px;
+            width:  20px;
             height: 20px;
           }
         }
@@ -575,18 +590,18 @@
     &-inner {
       max-width: 320px;
       &:after {
-        width: 90px;
+        width:  90px;
         height: 90px;
       }
       p {
         font-size: 16px;
         &.card {
-          font-size: 14px;
+          font-size:    14px;
           padding-left: 15px;
         }
       }
       .close {
-        width: 15px;
+        width:  15px;
         height: 15px;
         span {
           &:after, &:before {
@@ -595,8 +610,8 @@
         }
       }
       .btn {
-        max-width: 120px;
-        line-height: 2.3;
+        max-width:     120px;
+        line-height:   2.3;
         margin-bottom: 10px;
       }
     }
