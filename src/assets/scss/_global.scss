@@ -159,7 +159,7 @@ form {
   position:  relative;
 }
 
-.error {
+.error, .success {
   position:   absolute;
   top:        -30px;
   left:       0;
@@ -167,6 +167,9 @@ form {
   color:      red;
   width:      100%;
   text-align: center;
+}
+.success {
+  color: green;
 }
 
 @media screen and (max-width: 1600px) {

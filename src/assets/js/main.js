@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const email = $("#email");
     const message = $("#message");
     const error = $(".error");
+    const success = $(".success");
 
     function validateEmail(email) {
         const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -63,13 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
     submit.on('click', function (e) {
         e.preventDefault();
         if (email.val() === '' || message.val() === '') {
-            console.log(1)
-            error.html('Please Fill Required Fields');
+            error.html('Будь ласка, заповніть всі поля');
         } else if (!validateEmail(email.val())) {
-            console.log(2)
-            error.html('Please enter a valid email address');
+            error.html('Будь ласка, введіть дійсну адресу електронної пошти');
         } else {
-            console.log(3)
             $.ajax({
                 url: './ajax/mail.php',
                 type: 'POST',
@@ -87,6 +85,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (!data) {
                         console.log('There were errors, the message was not sent');
                     } else {
+                        error.html('');
+                        success.html('Повідомлення відправленно');
                         // clear form fields
                         $("#contact-form").trigger("reset");
                         submit.attr('disabled', 'false');
