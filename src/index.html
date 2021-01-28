@@ -47,8 +47,8 @@
         <p class='card'>3333 3333 3333 3333 <img src='assets/images/copy.svg' alt=''></p>
         <p>оплатити за допомогою:</p>
         <div class='copy-buttons'>
-            <a class='btn' href='https://www.ipay.ua/ua/p2p' target="_blank">Site 1</a>
-            <a class='btn' href='https://www.portmone.com.ua/p2p' target="_blank">Site 2</a>
+            <a class='btn' href='https://www.ipay.ua/ua/p2p' target="_blank">ipay.ua</a>
+            <a class='btn' href='https://www.portmone.com.ua/p2p' target="_blank">portmone.com</a>
         </div>
     </div>
 </div>
@@ -65,7 +65,7 @@
                     Tali Light
                 </h2>
                 <div class='buttons'>
-                    <a class='btn btn-support' href='#'>Підтримати</a>
+                    <div class='btn btn-support'>Підтримати</div>
                 </div>
             </div>
         </div>
@@ -84,7 +84,7 @@
                         прошу вас підтримати мене сьогодні - ми відкриваємо збір коштів:
                     </p>
                     <div>
-                        <a class='btn btn-support' href='#'>Підтримати</a>
+                        <div class='btn btn-support'>Підтримати</div>
                     </div>
                 </div>
                 <div class='info-image'>
@@ -144,14 +144,15 @@
         <div class='container'>
             <div class='contacts-inner'>
                 <div class='contacts-form'>
-                    <form>
+                    <form id="contact-form">
                         <label>
-                            <input type='Email' placeholder='Email'>
+                            <input id="email" type='Email' placeholder='Email'>
                         </label>
                         <label>
-                            <input type='text' placeholder="Повідомлення">
+                            <textarea id='message' placeholder="Повідомлення"></textarea>
                         </label>
-                        <button type='submit' class='btn'>Відправити</button>
+                        <button id="submit" type='submit' class='btn'>Відправити</button>
+                        <span class="error"></span>
                     </form>
                 </div>
                 <div class='contacts-contact'>
@@ -185,6 +186,7 @@
         </div>
     </div>
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src='./assets/js/main.js'></script>
 </body>
 </html>

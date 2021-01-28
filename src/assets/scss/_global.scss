@@ -98,18 +98,19 @@ form {
     width:         100%;
     &:nth-child(2) {
       margin-bottom: 70px;
-      input {
+      input, textarea {
         padding: 15px 30px 120px 30px;
       }
     }
   }
-  input {
+  input, textarea {
     width:       100%;
     background:  transparent;
     border:      2px solid $white;
     padding:     15px 30px;
     font-size:   22px;
     font-weight: 700;
+    resize:      none;
     &::placeholder {
       color: $text-color;
     }
@@ -136,6 +137,7 @@ form {
   margin-right:  7.1%;
   margin-bottom: 1rem;
   transition:    .3s linear;
+  cursor:        pointer;
   &:last-child {
     margin: 0;
   }
@@ -155,6 +157,16 @@ form {
   padding:   0 40px;
   margin:    0 auto;
   position:  relative;
+}
+
+.error {
+  position:   absolute;
+  top:        -30px;
+  left:       0;
+  font-size:  12px;
+  color:      red;
+  width:      100%;
+  text-align: center;
 }
 
 @media screen and (max-width: 1600px) {
@@ -206,11 +218,11 @@ form {
       margin-bottom: 15px;
       &:nth-child(2) {
         margin-bottom: 30px;
-        input {
+        input, textarea {
           padding: 10px 15px 95px 15px;
         }
       }
-      input {
+      input, textarea {
         font-size: 16px;
         padding:   10px 15px;
         border:    1px solid $white;
@@ -249,11 +261,11 @@ form {
   form {
     label {
       &:nth-child(2) {
-        input {
+        input, textarea {
           padding: 10px 10px 55px 10px;
         }
       }
-      input {
+      input, textarea {
         font-size: 14px;
         padding:   10px;
       }
